@@ -17,8 +17,8 @@ This dataset is from kaggle, and it contains the following features:
 * **Smoker**: If the customer Smoking or not
 
 * **Region**: The beneficiary's residential area in the US, northeast, southeast, southwest, northwest
-
-  ## Python Libraries
+  
+## Python Libraries
 
   The following python libraries was us in this project
 
