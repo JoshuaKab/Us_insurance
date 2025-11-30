@@ -29,3 +29,19 @@ This dataset is from kaggle, and it contains the following features:
 -  `seaborn` for visualizing the data.
 -   `matplotlib` for visualizing the data.
 -   `sklearn` for machine learning and machine-learning-pipeline related functions.
+  ## Summary
+
+In this notebook, we explored the factors influencing insurance charges using a dataset containing demographic and health-related features. We performed extensive data cleaning, exploratory data analysis (EDA), and feature engineering, including label encoding for categorical variables and outlier removal. Several regression models were trained and evaluated, including Linear Regression, Ridge, Lasso, Polynomial Regression, Random Forest, and XGBoost. Hyperparameter tuning was performed using GridSearchCV, and model performance was assessed using metrics such as RMSE and R² score.
+
+## Conclusion
+
+- **Key Influencers:** Smoking status, age, and BMI were found to be the most significant factors affecting insurance charges, with smoking status showing the strongest positive correlation.
+- **Model Performance:** Ensemble models like Random Forest and XGBoost outperformed linear models, achieving higher accuracy on the test set. However, some overfitting was observed, as indicated by better performance on training data compared to test data.
+- **Feature Importance:** Feature importance analysis confirmed that 'smoker', 'age', and 'bmi' are the top predictors for insurance charges.
+
+## Recommendations
+
+1. **Business Action:** Insurance companies should pay particular attention to applicants' smoking status, age, and BMI when assessing risk and pricing policies.
+2. **Deployment:** The trained model has beem deployed as a web service using Streamlit for real-time insurance charge prediction.
+
+
