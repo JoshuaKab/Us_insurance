@@ -10,7 +10,7 @@ This dataset is from kaggle, and it contains the following features:
 
 * **Gender**: insurance contractor gender, female, male
 
-* **BMI**: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height, objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9
+* **BMI**: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height
 
 * **Children**: Number of children covered by health insurance / Number of dependents
 
