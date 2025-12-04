@@ -95,6 +95,7 @@ if submitted:
 
 # --- Footer ---
 st.sidebar.markdown("---")
-st.sidebar.markdown("These analyses provide a holistic view of health-related insurance factors and help identify high-risk demographics, cost drivers, and geographical patterns")
+st.sidebar.markdown("These project provide a holistic view of health-related insurance factors and help identify high-risk demographics, cost drivers, and geographical patterns")
+
 
 
