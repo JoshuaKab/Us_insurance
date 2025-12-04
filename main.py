@@ -95,5 +95,6 @@ if submitted:
 
 # --- Footer ---
 st.sidebar.markdown("---")
-st.sidebar.markdown("This project will help us to calculate the US Insurance cost '.")
+st.sidebar.markdown("These analyses provide a holistic view of health-related insurance factors and help identify high-risk demographics, cost drivers, and geographical patterns")
+
 
