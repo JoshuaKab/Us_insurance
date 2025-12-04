@@ -42,6 +42,6 @@ In this notebook, we explored the factors influencing insurance charges using a 
 ## Recommendations
 
 1. **Business Action:** Insurance companies should pay particular attention to applicants' smoking status, age, and BMI when assessing risk and pricing policies.
-2. **Deployment:** The trained model has beem deployed as a web service using Streamlit for real-time insurance charge prediction.
+2. **Deployment:** The trained model has beem deployed as a web service using Streamlit for real-time insurance charge prediction. [Click here](https://usinsurance-spayijncp2awtocj5txnhr.streamlit.app/)
 
 This workflow provides a solid foundation for predictive modeling in insurance pricing 
