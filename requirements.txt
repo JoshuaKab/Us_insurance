@@ -1,0 +1,12 @@
+
+
+# This file lists the Python packages required for the application to run.
+
+# Specific core libraries used in the previous traceback
+streamlit
+joblib==1.3.2
+
+# Common data science/app dependencies you might also need
+pandas
+numpy
+scikit-learn
