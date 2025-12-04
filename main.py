@@ -22,12 +22,12 @@ model_pipeline = load_model()
 
 # --- Streamlit UI Setup ---
 st.set_page_config(
-    page_title="US Health Insurance Cost Predictor",
+    page_title="US Health Insurance Calculation",
     layout="centered"
 )
 
-st.title("💸 US Health Insurance Cost Predictor")
-st.markdown("Estimate your annual medical charges using a Machine Learning model.")
+st.title("💸 US Health Insurance Calculation")
+st.markdown("Estimate your annual medical amount using a Machine Learning model.")
 
 # --- User Input Fields (in a form for better structure) ---
 with st.form("prediction_form"):
@@ -95,4 +95,5 @@ if submitted:
 
 # --- Footer ---
 st.sidebar.markdown("---")
-st.sidebar.markdown("Project by a helpful AI Assistant. Uses the 'Medical Cost Personal Dataset'.")
+st.sidebar.markdown("This project will help us to calculate the US Insurance cost '.")
+
