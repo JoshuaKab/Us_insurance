@@ -97,5 +97,46 @@ if submitted:
 st.sidebar.markdown("---")
 st.sidebar.markdown("These project provide a holistic view of health-related insurance factors and help identify high-risk demographics, cost drivers, and geographical patterns")
 
+import streamlit as st
+import pandas as pd
+
+
+def load_dataset(path, sep=";"):
+    df = pd.read_csv(path, sep=sep)
+
+    st.title("US Average Insurance Fees")
+
+    # ======================
+    # Gender-based averages
+    # ======================
+    st.subheader("Average Insurance Fees by Gender")
+
+    gender_avg = df.groupby("sex")["charges"].mean()
+    st.write(f"👨 **Average fees for males:** ${gender_avg.loc['male']:,.2f}")
+    st.write(f"👩 **Average fees for females:** ${gender_avg.loc['female']:,.2f}")
+
+    # ======================
+    # Smoker-based averages
+    # ======================
+    st.subheader("Average Insurance Fees by Smoking Status")
+
+    smoker_avg = df.groupby("smoker")["charges"].mean()
+    st.write(f"🚬 **Average fees for smokers:** ${smoker_avg.loc['yes']:,.2f}")
+    st.write(f"🚭 **Average fees for non-smokers:** ${smoker_avg.loc['no']:,.2f}")
+
+    # ======================
+    # Region-based averages
+    # ======================
+    st.subheader("Insurance Fees per Region")
+
+    region_avg = df.groupby("region")["charges"].mean()
+
+    
+    st.dataframe(region_avg.reset_index())
+    st.bar_chart(region_avg)
+
+    return df
+
+df = load_dataset("US_insurance.csv")
 
 
