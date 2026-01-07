@@ -145,6 +145,7 @@ if not path.exists():
 else:
     df = pd.read_csv(path)
 
+st.write("This study examines U.S. insurance data to evaluate the key factors influencing insurance costs. The results indicate that smoking is the most influential factor, followed by body mass index (BMI) and age.")
 
 
 
