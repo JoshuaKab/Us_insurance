@@ -137,6 +137,13 @@ def load_dataset(path, sep=";"):
 
     return df
 
-df = load_dataset("US_insurance.csv")
+vfrom pathlib import Path
+
+path = Path("US_insurance.csv")
+if not path.exists():
+    st.error(f"File not found: {path.resolve()}")
+else:
+    df = pd.read_csv(path)
+
 
 
