@@ -143,9 +143,10 @@ path = Path('US_Insurance.csv', sep=';')
 if not path.exists():
     st.error(f"File not found: {path.resolve()}")
 else:
-    df = pd.read_csv(path)
+    df = load_dataset("US_Insurance.csv", sep=";")
 
 st.write("This study examines U.S. insurance data to evaluate the key factors influencing insurance costs. The results indicate that smoking is the most influential factor, followed by body mass index (BMI) and age.")
+
 
 
 
