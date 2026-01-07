@@ -131,10 +131,9 @@ def load_dataset(path, sep=";"):
 
     region_avg = df.groupby("region")["charges"].mean()
 
-    
-    st.dataframe(region_avg.reset_index())
     st.bar_chart(region_avg)
-
+    st.dataframe(region_avg.reset_index())
+    
     return df
 
 from pathlib import Path
@@ -146,6 +145,7 @@ else:
     df = load_dataset("US_Insurance.csv", sep=";")
 
 st.write("This study examines U.S. insurance data to evaluate the key factors influencing insurance costs. The results indicate that smoking is the most influential factor, followed by body mass index (BMI) and age.")
+
 
 
 
